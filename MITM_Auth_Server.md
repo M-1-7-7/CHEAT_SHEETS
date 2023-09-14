@@ -1,4 +1,4 @@
-# Have a target try authenticate to the Authentication server that has been spun up
+# Authenticate to the Authentication server
 
 Use **Responder** to start up a bunch of services on the kali machine.  
 
