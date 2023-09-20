@@ -3,7 +3,7 @@
 
 ## Machine 1 (Linux)
 chisel client 192.168.1.72 8001 --reverse R:socks:2000
-vi /etc/proxychains4.conf # Change socks and port
+vi /etc/proxychains4.conf # Change socks and port to match socks port.
 
 ## Machine 2 (Windows)
 chisel client 192.168.1.72 8001 --reverse R:socks:2001
